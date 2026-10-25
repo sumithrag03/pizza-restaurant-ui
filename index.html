@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore beautiful destinations, photography, and travel inspiration.">
+    <title>ExploreWorld | Discover Beautiful Places</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+          rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Responsive Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-globe-americas"></i> ExploreWorld
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto me-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+
+                <form class="d-flex mt-3 mt-lg-0" id="searchForm" role="search">
+                    <label class="visually-hidden" for="siteSearch">Search destinations</label>
+                    <input class="form-control me-2" id="siteSearch"
+                           type="search" placeholder="Search..."
+                           aria-label="Search destinations">
+                    <button class="btn btn-outline-light" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Carousel -->
+        <section id="home" aria-label="Featured destinations">
+            <div id="heroCarousel" class="carousel slide carousel-fade"
+                 data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel"
+                            data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel"
+                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel"
+                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=85"
+                             class="d-block w-100 hero-image"
+                             alt="Majestic mountain peaks">
+                        <div class="carousel-caption">
+                            <p class="text-uppercase fw-semibold">Find your next adventure</p>
+                            <h1>Discover the Beauty of the World</h1>
+                            <p>Explore unforgettable places and make memories that last.</p>
+                            <a href="#gallery" class="btn btn-primary btn-lg">Explore Gallery</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1920&q=85"
+                             class="d-block w-100 hero-image"
+                             alt="Beautiful tropical beach">
+                        <div class="carousel-caption">
+                            <p class="text-uppercase fw-semibold">Escape the ordinary</p>
+                            <h2>Relax by the Ocean</h2>
+                            <p>Find peaceful beaches and crystal-clear waters.</p>
+                            <a href="#destinations" class="btn btn-primary btn-lg">View Destinations</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1920&q=85"
+                             class="d-block w-100 hero-image"
+                             alt="Mountain under a starry night sky">
+                        <div class="carousel-caption">
+                            <p class="text-uppercase fw-semibold">Create your story</p>
+                            <h2>Adventure Is Waiting</h2>
+                            <p>Step outside, explore something new, and enjoy the journey.</p>
+                            <a href="#features" class="btn btn-primary btn-lg">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#heroCarousel" data-bs-slide="prev"
+                        aria-label="Previous slide">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#heroCarousel" data-bs-slide="next"
+                        aria-label="Next slide">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Three-Item Flex Section -->
+        <section id="features" class="features-section section-padding">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">WHY EXPLORE WITH US?</p>
+                    <h2>Make Every Journey Special</h2>
+                    <p>Get inspired to discover new places and experiences.</p>
+                </div>
+
+                <div class="feature-flex">
+                    <div class="feature-item">
+                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=700&q=80"
+                             alt="Lake surrounded by mountains">
+                        <div class="feature-content">
+                            <h3>Beautiful Destinations</h3>
+                            <p>Discover breathtaking landscapes, peaceful lakes, and wonderful places around the world.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=700&q=80"
+                             alt="Open road through a scenic landscape">
+                        <div class="feature-content">
+                            <h3>Adventure Awaits</h3>
+                            <p>Turn your free time into exciting experiences and unforgettable adventures.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80"
+                             alt="Sunlight falling over a scenic landscape">
+                        <div class="feature-content">
+                            <h3>Capture Memories</h3>
+                            <p>Find inspiration for your next trip and capture moments worth remembering.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nine-Image CSS Grid Gallery -->
+        <section id="gallery" class="gallery-section section-padding">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">PHOTO STORIES</p>
+                    <h2>Explore Our Gallery</h2>
+                    <p>A collection of places that inspire the explorer in you.</p>
+                </div>
+
+                <div class="photo-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80"
+                             alt="Mountain lake landscape" loading="lazy">
+                        <span>Mountain Lakes</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                             alt="Sunny tropical beach" loading="lazy">
+                        <span>Tropical Beaches</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=800&q=80"
+                             alt="Night sky filled with stars" loading="lazy">
+                        <span>Starry Nights</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80"
+                             alt="Sunlight in a green forest" loading="lazy">
+                        <span>Green Forests</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80"
+                             alt="Sunlit mountain scenery" loading="lazy">
+                        <span>Open Landscapes</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80"
+                             alt="Ocean waves meeting the shore" loading="lazy">
+                        <span>Ocean Views</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80"
+                             alt="Cabin beside a quiet lake" loading="lazy">
+                        <span>Quiet Escapes</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80"
+                             alt="Snowy mountain beneath stars" loading="lazy">
+                        <span>Mountain Peaks</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=800&q=80"
+                             alt="Wildlife in a natural landscape" loading="lazy">
+                        <span>Wildlife</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootstrap Cards -->
+        <section id="destinations" class="destinations-section section-padding">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">TRAVEL INSPIRATION</p>
+                    <h2>Popular Destinations</h2>
+                    <p>Choose a destination for your next great adventure.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 destination-column">
+                        <div class="card destination-card h-100">
+                            <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=80"
+                                 class="card-img-top" alt="Colorful coastal village in Italy"
+                                 loading="lazy">
+                            <div class="card-body">
+                                <h3 class="card-title">Coastal Getaways</h3>
+                                <p class="card-text">Discover colorful seaside towns, beautiful views, and relaxing coastal walks.</p>
+                                <a href="#contact" class="btn btn-primary">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 destination-column">
+                        <div class="card destination-card h-100">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80"
+                                 class="card-img-top" alt="Tall mountain peaks"
+                                 loading="lazy">
+                            <div class="card-body">
+                                <h3 class="card-title">Mountain Adventures</h3>
+                                <p class="card-text">Explore scenic trails, fresh mountain air, and unforgettable panoramic views.</p>
+                                <a href="#contact" class="btn btn-primary">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 destination-column">
+                        <div class="card destination-card h-100">
+                            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=80"
+                                 class="card-img-top" alt="Sunlight filtering through a forest"
+                                 loading="lazy">
+                            <div class="card-body">
+                                <h3 class="card-title">Nature Retreats</h3>
+                                <p class="card-text">Slow down, reconnect with nature, and find peace among beautiful green landscapes.</p>
+                                <a href="#contact" class="btn btn-primary">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p id="noResults" class="text-center mt-4 d-none">
+                    No matching destinations found. Try another search.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact / Call to Action -->
+        <section id="contact" class="contact-section">
+            <div class="container text-center">
+                <p class="section-kicker">YOUR NEXT CHAPTER STARTS HERE</p>
+                <h2>Ready to Explore the World?</h2>
+                <p>Find inspiration, plan your next adventure, and make every moment count.</p>
+                <a href="#home" class="btn btn-light btn-lg">Start Exploring</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <a class="footer-brand" href="#home">ExploreWorld</a>
+                    <p class="mt-3">Inspiring you to discover beautiful places and experience the world in new ways.</p>
+                </div>
+
+                <div class="col-6 col-lg-2">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <h3>Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="#gallery">Nature Photography</a></li>
+                        <li><a href="#destinations">Travel Inspiration</a></li>
+                        <li><a href="#contact">Get in Touch</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h3>Follow Our Journey</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.youtube.com/" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p class="mb-0">&copy; <span id="currentYear"></span> ExploreWorld. All rights reserved.</p>
+                <a href="#home" class="back-to-top">
+                    Back to top <i class="bi bi-arrow-up-circle"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
